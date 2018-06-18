@@ -1,4 +1,3 @@
-{
   "name": "shoppinglist",
   "version": "1.0.0",
   "description": "Shopping list desktop app",
@@ -9,9 +8,11 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shopping List\"",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+    "package": "",
+    "build-darwin"  : "electron-packager . electron-app --platform=darwin --icon assets/icons/mac/icon.icns --overwrite",
+    "build-linux"   : "electron-packager . electron-app --platform=linux --icon assets/icons/png/icon.png --overwrite",
+    "build-win32"   : "electron-packager . electron-app --platform=win32 --icon assets/icons/win/icon.ico --overwrite",
+    "build"         : "npm run build-darwin && npm run build-win32"
   },
   "author": "Charlie Billadeau",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "electron": "^2.0.2"
   },
   "devDependencies": {
+    "asar": "^0.14.3",
     "electron-packager": "^12.1.0"
   }
 }
