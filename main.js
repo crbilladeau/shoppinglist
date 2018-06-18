@@ -18,7 +18,8 @@ app.on('ready', function(){
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'mainWindow.html'),
     protocol: 'file:',
-    slashes:true
+    slashes:true,
+    icon: path.join(__dirname, 'assets/icons/win/icon.ico')
   }));
   // Quit app when closed
   mainWindow.on('closed', function(){
