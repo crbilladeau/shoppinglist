@@ -1,5 +1,5 @@
 # Shopping List App
 
-Thanks for checking this out. This is my first desktop application that I built using a YouTube video guide from Traversy media (https://www.youtube.com/watch?v=kN1Czs0m1SU). I don't know if I'll edit this to make it nicer or more customized because it was mostly just a practice with creating and packaging the code in Electron.
+Thanks for checking this out. This project was built and packaged with Electron. 
 
-Also, this is a desktop app, so I'm only displaying the code here. I'm unable to upload the application itself because of GitHub's space restrictions, but I'm looking into a way to host it as a download somewhere else!
+Due to size restrictions on Github, I am unable to upload the full app to the repository.
